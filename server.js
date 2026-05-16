@@ -24,7 +24,7 @@ const app = express();
 // Security Headers
 app.use(helmet());
 app.use(cors({
-  origin: "https://epms-308q.onrender.com"
+  origin: "https://rw-epms.netlify.app"
 }));
 
 // Request Logging
