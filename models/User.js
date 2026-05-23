@@ -24,7 +24,6 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ['admin', 'tele_counselor', 'counselor', 'fde', 'faculty'],
       default: 'counselor',
     },
     branchId: {

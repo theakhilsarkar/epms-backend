@@ -12,6 +12,7 @@ const branchRoutes = require('./routes/branchRoutes');
 const roleConfigRoutes = require('./routes/roleConfigRoutes');
 const reportRoutes = require('./routes/reportRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
+const employeeRoutes = require('./routes/employeeRoutes');
 
 // Load env vars
 dotenv.config();
@@ -61,6 +62,7 @@ app.use('/api/branches', branchRoutes);
 app.use('/api/role-configs', roleConfigRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/employees', employeeRoutes);
 
 // Error Handling Middleware
 app.use(notFound);
